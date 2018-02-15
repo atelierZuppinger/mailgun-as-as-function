@@ -1,0 +1,80 @@
+// colors
+orange = #FF6600
+orange_70 = #b5511c
+orange_o90 = rgba(255, 102, 0, .9)
+orange_o90_ie = url(img/ie.orange_alpha90.png)
+grey_5 = #f2f2f2
+grey_20 = #cccccc
+grey_30 = #B2B2B2
+grey_50 = #7f7f7f
+grey_70 = #4d4d4d
+
+// fonts
+rockwell = 'Rockwell W01', Arial, sans-serif
+rockwellBold = 'Rockwell W01 Bold', Arial, sans-serif
+helvetica = 'HelveticaNeueW01-55Roma', Arial, sans-serif
+helveticaLight = 'HelveticaNeueW01-45Ligh', Arial, sans-serif
+helveticaBold = 'HelveticaNeueW01-75Bold', Arial, sans-serif
+
+margin = 10px
+
+html, body
+  margin (margin*2)
+  padding 0
+  font-family helvetica
+  font-size 12px
+  background grey_5
+  color grey_70
+  -webkit-print-color-adjust exact
+  box-sizing border-box
+
+h1, h2, h3, h4
+  margin-top 0
+h1
+  font-family rockwellBold
+  font-size 25px
+  margin-bottom margin
+h2
+  font-family rockwell
+  font-size 18px
+  margin-bottom (margin/2)
+h3
+  font-family rockwell
+  margin-bottom (margin/2)
+  font-size 18px
+h4
+  font-family helveticaBold
+  font-size 12px
+  margin-bottom 0
+p
+  margin-top 0
+  margin-bottom margin
+ul
+  margin-top 0
+  margin-left margin
+  padding-left margin
+  li
+    list-style disc
+
+a
+  text-decoration none
+  font-family helveticaBold
+  color grey_70
+  &:hover
+    color black
+
+.page
+  position relative
+  border-bottom 1px solid grey_70
+  padding (margin*2) 0
+
+@media print
+  html, body
+    background white
+  .page
+    margin 0
+    padding 0
+    height 100%
+    width 100%
+    page-break-after always
+    border 0

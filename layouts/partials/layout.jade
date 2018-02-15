@@ -1,0 +1,19 @@
+block vars
+  - current = 'home'
+  - title = "matière vive testing Netlify Functino"
+doctype html
+html
+
+  head
+    meta(charset='utf-8')
+    meta(name='author', content= "author of the site")
+    meta(name="viewport", content="initial-scale = 0.825, maximum-scale = 0.825, user-scalable = yes, width = device-width")
+    //- uncomment if your site is responsive!
+    //- meta(name="viewport" content="width=device-width, initial-scale=1")
+    title= title
+    link(rel='stylesheet', href='/css/master.css')
+    meta(name="theme-color", content="#ffffff")  
+    script(type="text/javascript", src="//fast.fonts.net/jsapi/c5dd7627-4b80-45d3-864a-f7e5695dbd58.js")
+
+  body
+    block content

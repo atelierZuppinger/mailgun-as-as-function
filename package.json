@@ -1,0 +1,16 @@
+{
+  "name": "mailgun-as-a-function",
+  "devDependencies": {
+    "jade": "^1.11.0",
+    "metalsmith": "^2.1.0",
+    "metalsmith-collections": "^0.7.0",
+    "metalsmith-layouts": "^1.6.4",
+    "metalsmith-markdown": "^0.2.1",
+    "metalsmith-markdown-remarkable": "^0.1.1",
+    "metalsmith-permalinks": "^0.5.0",
+    "metalsmith-serve": "0.0.7",
+    "metalsmith-stylus": "^2.0.0",
+    "metalsmith-watch": "^1.0.1",
+    "nib": "^1.1.0"
+  }
+}
